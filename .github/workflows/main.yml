@@ -4,16 +4,19 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4 # v4 ga yangilandi
+
       - name: Setup Theos
         run: |
           bash -c "$(curl -fsSL https://raw.githubusercontent.com/theos/theos/master/bin/install-theos)"
+
       - name: Build
         run: |
           export THEOS=~/theos
           make package
+
       - name: Upload
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4 # v4 ga yangilandi
         with:
           name: MeningBypassim
           path: packages/*.deb
