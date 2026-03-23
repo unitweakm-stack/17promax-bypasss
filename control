@@ -1,0 +1,7 @@
+Package: com.uzbek.17promax
+Name: 17ProMaxBypass
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm64
+Description: Anti-Ban for PUBG 4.3.0
+Maintainer: Developer
